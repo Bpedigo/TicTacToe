@@ -178,7 +178,7 @@ public class BPs_tic_tac_toe implements ActionListener {
         
      for(int i = 0; i<sqrs.length;i++)
      {      
-        if(ae.getSource() == sqrs[i])
+        if(ae.getSource() == sqrs[i] && sqrs[i].getText().equals(""))
         {
             moves++;
             sqrs[i].setText("X");
